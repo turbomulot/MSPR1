@@ -11,6 +11,7 @@ from src.router import (
     workout_session,
     meal_log,
     biometrics_log,
+    etl
 )
 
 
@@ -38,5 +39,6 @@ api.include_router(equipment.router)
 api.include_router(workout_session.router)
 api.include_router(meal_log.router)
 api.include_router(biometrics_log.router)
+app.include_router(etl.router)
 
 app.include_router(api)
